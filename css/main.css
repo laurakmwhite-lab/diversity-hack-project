@@ -1,0 +1,15 @@
+.navbar-img {
+    border-radius: 50%;
+    width: 40px;
+}
+
+h2 {
+    font-family: 'Lobster Two', cursive;
+    font-size: xx-large;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
