@@ -6,10 +6,32 @@
 h2 {
     font-family: 'Lobster Two', cursive;
     font-size: xx-large;
+    text-align: center;
 }
 
 .flex-container {
     display: flex;
     justify-content: center;
     margin: 50px;
+}
+.page_wrapper {
+    padding: 20px;
+}
+.team_members_wrapper {
+    margin: auto;
+    width: 80%;
+}
+.team_member_wrapper {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+.team_tagline {
+    text-align: center;
+}
+
+.user_icon {
+    height: 70%;
+    padding: 0 20px;
 }
