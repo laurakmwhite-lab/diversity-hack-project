@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <title>SupportYou - Home</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">SupportYou</a>
+        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="SupportYou Logo" class="logo_img"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse"></div>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
@@ -39,10 +42,29 @@
             </ul>
         </div>
     </nav>
-    <div class="flex-container">
-        <h2>How are you feeling today?</h2>
+    <div class="background_image">
+        <div class="flex-container">
+            <h2 id="homepage-title">How are you feeling today?</h2>
+            <div class="flex-left">
+                <form>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" cols="50" maxlength="300" placeholder="I am feeling..."></textarea>
+                    </div>
+                </form>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                   Share with?
+                </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">My Team</a>
+                        <a class="dropdown-item" href="#">My Favourites</a>
+                        <a class="dropdown-item" href="#">Everyone</a>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" class="btn btn-info" value="Submit">
+        </div>
     </div>
-
 </body>
 
 </html>
